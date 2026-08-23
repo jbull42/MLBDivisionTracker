@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AL Central Games</title>
+        <link rel="stylesheet" href="popup.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Pixelify+Sans:wght@400..700&family=Righteous&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+    <body>
+        <div class="heading">
+            <img src="icons/round-star.png" alt="" class="star">
+            <h1>Division Select</h1>
+            <img src="icons/round-star.png" alt="" class="star">
+        </div>
+        <br>
+        <div class="division-controls">
+            <span id="defaultIndicator" class="default-indicator">DEFAULT</span>
+            <select id="gameSelect">
+                <option value="200">American League West</option>
+                <option value="202" selected>American League Central</option>
+                <option value="201">American League East</option>
+                <option value="203">National League West</option>
+                <option value="205">National League Central</option>
+                <option value="204">National League East</option>
+
+            </select>
+            
+            <button id="setDefaultButton" class="watch-button">Set Default</button>
+            
+        </div>
+        <hr>
+        <br>
+        <div class="heading">
+            <img src="icons/round-star.png" alt="" class="star">
+            <h1 class="schedule-title">AL Central Schedule</h1>
+            <img src="icons/round-star.png" alt="" class="star">
+        </div>
+        <br>
+        <div id="games">
+            Loading...
+        </div>
+
+        <br>
+        <div class="heading">
+            <img src="icons/round-star.png" alt="" class="star">
+            <h1 class="standings-title">AL Central Standings</h2>
+            <img src="icons/round-star.png" alt="" class="star">
+        </div>
+        <div id="standings">
+            Loading...
+        </div>
+
+        <script src="popup.js"></script>    
+    </body>
+</html>

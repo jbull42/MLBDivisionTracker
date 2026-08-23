@@ -1,0 +1,12 @@
+{
+
+    "manifest_version" : 3,
+    "name" : "MLB Tracker",
+    "version" : "1.0.0",
+    "description" : "---",
+    "permissions" : ["storage"],
+    "action" : {
+        "default_popup" : "popup.html"
+    }
+
+}

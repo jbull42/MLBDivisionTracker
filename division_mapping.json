@@ -1,0 +1,8 @@
+{
+    "200": { "name": "American League West", "abbreviation": "AL West", "league": "AL" },
+    "201": { "name": "American League East", "abbreviation": "AL East", "league": "AL" },
+    "202": { "name": "American League Central", "abbreviation": "AL Central", "league": "AL" },
+    "203": { "name": "National League West", "abbreviation": "NL West", "league": "NL" },
+    "204": { "name": "National League East", "abbreviation": "NL East", "league": "NL" },
+    "205": { "name": "National League Central", "abbreviation": "NL Central", "league": "NL" }
+}
