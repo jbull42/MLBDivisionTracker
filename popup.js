@@ -277,8 +277,10 @@ async function displayGames(games) {
       // top of the inning = away team batting = home team pitching
       if (liveGame.halfInning === "top") {
         homePitcher = liveGame.pitcher;
+        awayPitcher = [`AB: ${liveGame.batter}`];
       } else {
         awayPitcher = liveGame.pitcher;
+        homePitcher = [`AB: ${liveGame.batter}`];
       }
     }
 
@@ -302,7 +304,17 @@ async function displayGames(games) {
       hour: "numeric",
       minute: "2-digit",
     });
-    const status = isPreview ? time : game.status.abstractGameState;
+    let status;
+    if (isPreview) {
+      status = time;
+    } else if (isFinal) {
+      status = game.status.abstractGameState;
+    } else if (liveGame.inning) {
+      const halfInningLabel = liveGame.halfInning === "top" ? "Top" : "Bot";
+      status = `${halfInningLabel} ${liveGame.inning}`;
+    } else {
+      status = game.status.abstractGameState;
+    }
     
 
     const watchButton = document.createElement("button");
